@@ -133,3 +133,56 @@ body {
 }
 
 /* ... (any other styles you have) ... */
+/* Footer Styles */
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.footer-column h4{
+    margin-bottom: 20px;
+}
+.footer-column.legal::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px; /* Adjust this value to control the position of the line */
+    transform: translateY(-50%);
+    height: 80%;
+    width: 2px;
+    background-color: black;
+}
+.footer-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+}
