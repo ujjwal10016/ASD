@@ -28,10 +28,10 @@
             <h2>Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
             <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
+                <form id="contactForm">
+                    <input type="text" id ="name" placeholder="Your Name">
+                    <input type="email" id ="email"placeholder="Your Email">
+                    <textarea id="message"placeholder="Your Message"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
@@ -40,6 +40,8 @@
             <!-- Footer content -->
         </footer>
     </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
